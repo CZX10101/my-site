@@ -3,21 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Learning Site</title>
+    <title>Learning by doing - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="app.png" type="image/png">
 </head>
 <body>
+    <!-- 动态极光背景 -->
+    <div class="aurora-bg"></div>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="quotes.html">Quotes</a>
+        <div class="nav-logo">✦ Learning by doing</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="quotes.html">Quotes</a>
+            <a href="project.html">Projects</a>
+            <a href="machine.html">Machine</a>
+        </div>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+            <a href="mailto:X20250020@stu.hibiuh.edu.cn" class="btn-contact">Contact</a>
+        </div>
     </nav>
-    <div class="container">
-        <h1>Welcome to My Learning Website</h1>
-        <p>This is a simple website built week by week for the Web Technologies course.</p>
-        
-        <h2>About Me</h2>
-        <p>I am a student learning HTML, CSS, and JavaScript. This site is my sandbox for testing new web technologies.</p>
-    </div>
+
+    <main class="container">
+        <div class="hero-card glass-panel">
+            <div class="hero-text">
+                <span class="tag">LEARNING BY DOING</span>
+                <h1>Welcome to My First HTML Page</h1>
+                <p>This is where I collect ideas, projects and a few words that inspire me. Built entirely from scratch using modern web technologies.</p>
+                <a href="quotes.html" class="btn-primary glow-btn">Explore favorite quotes</a>
+            </div>
+            <div class="hero-image">
+                <!-- 丝滑的声波律动 -->
+                <div class="waveform">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Built by X20250020 · Web Technologies 2026</p>
+        <p>X20250020@stu.hibiuh.edu.cn</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

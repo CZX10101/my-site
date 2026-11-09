@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes</title>
+    <title>Quotes - Learning by doing</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="app.png" type="image/png">
 </head>
 <body>
+    <div class="aurora-bg"></div>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="quotes.html">Quotes</a>
+        <div class="nav-logo">✦ Learning by doing</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="quotes.html" class="active">Quotes</a>
+            <a href="project.html">Projects</a>
+            <a href="machine.html">Machine</a>
+        </div>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+            <a href="mailto:X20250020@stu.hibiuh.edu.cn" class="btn-contact">Contact</a>
+        </div>
     </nav>
-    <div class="container">
-        <h1>My Favorite Quotes</h1>
-        <ul>
-            <li>"Stay hungry, stay foolish." - Steve Jobs</li>
-            <li>"The only way to do great work is to love what you do." - Steve Jobs</li>
-            <li>"Simplicity is the soul of efficiency." - Austin Freeman</li>
-            <li>"First, solve the problem. Then, write the code." - John Johnson</li>
-            <li>"Code is like humor. When you have to explain it, it’s bad." - Cory House</li>
-            <li>"Make it work, make it right, make it fast." - Kent Beck</li>
-            <li>"The best way to predict the future is to invent it." - Alan Kay</li>
-            <li>"Talk is cheap. Show me the code." - Linus Torvalds</li>
-            <li>"Programs must be written for people to read." - Harold Abelson</li>
-            <li>"Any fool can write code that a computer can understand." - Martin Fowler</li>
-            <li>"Experience is the name everyone gives to their mistakes." - Oscar Wilde</li>
-            <li>"Knowledge is power." - Francis Bacon</li>
-            <li>"The only true wisdom is in knowing you know nothing." - Socrates</li>
-            <li>"Life is like riding a bicycle. To keep your balance, you must keep moving." - Albert Einstein</li>
-            <li>"Do or do not. There is no try." - Yoda</li>
-        </ul>
-    </div>
+
+    <main class="container">
+        <div class="glass-panel content-card">
+            <span class="tag">WORDS TO REMEMBER</span>
+            <h1>Favorite Quotes</h1>
+            
+            <div class="flip-card">
+                <div class="flip-card-inner" id="flip-inner">
+                    <div class="flip-card-front">
+                        <h2>Click the button below</h2>
+                        <p>to reveal a quote</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p id="quote-text">"Darkness cannot drive out darkness; only light can do that."</p>
+                        <p id="quote-author">- Martin Luther King Jr.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="next-quote" class="btn-primary glow-btn">Flip Card ⟳</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Built by X20250020 · Web Technologies 2026</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
