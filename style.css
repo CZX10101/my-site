@@ -1,4 +1,3 @@
-/* 核心变量 */
 :root {
     --bg-color: #f8fafc;
     --surface-color: rgba(255, 255, 255, 0.7);
@@ -40,7 +39,6 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* 极光背景 */
 .aurora-bg {
     position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
     background: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.1), transparent 30%),
@@ -53,7 +51,6 @@ body {
     100% { transform: translate(-30px, 20px) scale(1.05); }
 }
 
-/* 导航栏 */
 nav {
     display: flex; justify-content: space-between; align-items: center;
     background: var(--nav-bg); backdrop-filter: blur(12px);
@@ -68,7 +65,6 @@ nav {
 .btn-contact { color: var(--primary-color); text-decoration: none; border: 1px solid var(--primary-color); padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; }
 .btn-contact:hover { background: var(--primary-color); color: #fff; box-shadow: var(--glow); }
 
-/* 玻璃拟态 */
 .container { flex: 1; max-width: 1000px; margin: 3rem auto; padding: 0 1rem; width: 100%; }
 .glass-panel {
     background: var(--surface-color);
@@ -83,13 +79,11 @@ h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 1rem; }
 .subtitle { color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem; }
 .tag { color: var(--primary-color); font-size: 0.8rem; font-weight: 800; letter-spacing: 2px; display: block; margin-bottom: 0.5rem; }
 
-/* 首页 */
 .hero-card { display: flex; padding: 4rem; align-items: center; overflow: hidden; }
 .hero-text { flex: 1; padding-right: 3rem; }
 .hero-text p { color: var(--text-muted); margin-bottom: 2rem; }
 .hero-image { flex: 1; display: flex; justify-content: center; align-items: center; }
 
-/* 声波律动 */
 .waveform { display: flex; align-items: center; gap: 6px; height: 100px; }
 .bar { width: 12px; border-radius: 6px; background: var(--primary-color); animation: pulse 1s infinite ease-in-out alternate; }
 .bar:nth-child(1) { height: 40%; animation-delay: 0.1s; }
@@ -102,11 +96,9 @@ h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 1rem; }
     100% { transform: scaleY(1); opacity: 1; box-shadow: var(--glow); }
 }
 
-/* 按钮 */
 .btn-primary { display: inline-block; background: var(--primary-color); color: #fff; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
 .glow-btn:hover { transform: translateY(-2px); box-shadow: var(--glow); }
 
-/* 3D 翻转卡片 */
 .flip-card { background-color: transparent; width: 100%; height: 300px; perspective: 1000px; margin-bottom: 2rem; cursor: pointer; }
 .flip-card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
 .flip-card-inner.flipped { transform: rotateY(180deg); }
@@ -116,13 +108,11 @@ h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 1rem; }
 .flip-card-back p:first-child { font-size: 1.8rem; font-weight: 700; font-style: italic; margin-bottom: 1rem; }
 .flip-card-back p:last-child { color: var(--primary-color); font-weight: bold; }
 
-/* 3D 倾斜网格 */
 .tilt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
 .tilt-card { padding: 2rem; border-radius: 20px; transform-style: preserve-3d; will-change: transform; transition: border-color 0.3s, box-shadow 0.3s; }
 .tilt-card:hover { border-color: var(--primary-color); box-shadow: var(--glow); }
 .tilt-card h3 { margin-bottom: 0.8rem; font-size: 1.3rem; color: var(--primary-color); }
 
-/* CAPTCHA */
 .captcha-box { max-width: 400px; margin: 0 auto; padding: 2rem; text-align: center; }
 .checkbox-label { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 1rem; background: var(--bg-color); border-radius: 8px; border: 1px solid var(--border-color); cursor: pointer; margin-top: 1rem; }
 .msg { color: #ef4444; font-weight: bold; margin-top: 1rem; min-height: 20px; }
@@ -133,7 +123,12 @@ footer { text-align: center; padding: 2rem; color: var(--text-muted); border-top
     .hero-card { flex-direction: column; padding: 2rem; text-align: center; }
     .hero-text { padding-right: 0; margin-bottom: 2rem; }
     .tilt-grid { grid-template-columns: 1fr; }
-    nav { flex-direction: column; gap: 15px; }
-    .nav-links { flex-wrap: wrap; justify-content: center; }
+    nav { flex-direction: column; gap: 15px; padding: 1rem 0.5rem; }
+    .nav-links { flex-wrap: wrap; justify-content: center; gap: 5px; }
+    .nav-links a { margin: 0; font-size: 0.9rem; }
+    .content-card { padding: 1.5rem; }
+    h1 { font-size: 2rem; }
+    .flip-card { height: 350px; }
+    .flip-card-back p:first-child { font-size: 1.3rem; }
     footer { flex-direction: column; gap: 10px; }
 }
